@@ -1,0 +1,41 @@
+{
+  "contacts": [
+    ["Priya Nair", "priya.nair"], ["Marcus Webb", "marcus.webb"], ["Elena Sorokina", "elena.sorokina"],
+    ["Dan Okafor", "dan.okafor"], ["Hannah Lindqvist", "hannah.lindqvist"], ["Tom Reyes", "tom.reyes"],
+    ["Grace Whitfield", "grace.whitfield"], ["Sanjay Patel", "sanjay.patel"], ["Mia Kowalski", "mia.kowalski"],
+    ["Luis Ferreira", "luis.ferreira"], ["Nora Ellis", "nora.ellis"], ["Ben Hartley", "ben.hartley"]
+  ],
+  "threads": [
+    {"subject": "Q{q} Vendor Onboarding", "messages": [
+      "Hi {owner},\n\nWe have three vendors in the final round for Q{q}. Can you confirm the onboarding checklist is current before Friday?\n\n{other}",
+      "Checklist updated. Legal still needs the insurance certificates from two of them.\n\n{owner}",
+      "Thanks. I'll chase those today and loop you in once they land.\n\n{other}"
+    ]},
+    {"subject": "Project Phoenix Timeline", "messages": [
+      "Team, draft timeline attached in the shared drive. Biggest risk is still the carrier integration.\n\n{other}",
+      "Agree on the risk. Can we pull the integration test window forward one week?\n\n{owner}",
+      "Possible if ops signs off. I'll ask in tomorrow's standup.\n\n{other}",
+      "Ops is fine with it. Updating the plan.\n\n{owner}"
+    ]},
+    {"subject": "Warehouse capacity review", "messages": [
+      "Utilization hit 91% last month. Do we want to open the overflow lease early?\n\n{other}",
+      "Let's wait for the November forecast, then decide.\n\n{owner}"
+    ]},
+    {"subject": "Team offsite logistics", "messages": [
+      "Two venues shortlisted. Poll is in the calendar invite.\n\n{other}",
+      "Voted. I prefer the lakeside one if the budget allows.\n\n{owner}",
+      "Budget works. Booking it.\n\n{other}"
+    ]},
+    {"subject": "Invoice discrepancy - freight March", "messages": [
+      "Finance flagged a 4% mismatch on the March freight invoice. Can you check the rate card?\n\n{other}",
+      "Rate card was updated mid-month. I'll send the revised figures.\n\n{owner}"
+    ]}
+  ],
+  "automated": [
+    {"sender": ["Cloud Billing", "billing@cloudhost.example"], "subject": "Your {month} invoice is ready", "body": "Your invoice for {month} is available in the billing console.\n\nAmount due: ${amount}\nDue date: within 14 days.\n\nThis is an automated message."},
+    {"sender": ["ShipTrack", "notify@shiptrack.example"], "subject": "Package update: out for delivery", "body": "Your shipment ref {ref} is out for delivery and should arrive today.\n\nThis is an automated message."},
+    {"sender": ["License Manager", "licenses@softvendor.example"], "subject": "License renewal reminder", "body": "Your team license renews in 30 days. Seats in use: {seats}.\n\nManage your subscription in the admin portal."},
+    {"sender": ["Calendar", "calendar@workspace.example"], "subject": "Invitation: Weekly ops sync", "body": "You have been invited to Weekly ops sync.\nWhen: Mondays 9:30 AM\n\nThis is an automated message."},
+    {"sender": ["Security Notices", "no-reply@identity.example"], "subject": "New sign-in to your account", "body": "We noticed a sign-in from a new device. If this was you, no action is needed."}
+  ]
+}

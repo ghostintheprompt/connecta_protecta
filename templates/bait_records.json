@@ -1,0 +1,9 @@
+{
+  "bait": [
+    {"subject": "Temporary Staging Server Credentials", "from": 0, "body": "Hi {owner},\n\nStaging box is up. Temp login below, rotate after the demo.\n\nhost: staging.internal.example.com\nuser: deploy\npass: {fake_password}\n\nStatus page: {canary_url}\n\n{other}"},
+    {"subject": "API Key Rotation", "from": 0, "body": "Rotating keys this week. Current pair for the reporting service:\n\nAWS_ACCESS_KEY_ID={fake_aws_key}\nAWS_SECRET_ACCESS_KEY={fake_aws_secret}\n\nRunbook: {canary_url}\n\n{other}"},
+    {"subject": "Updated Wire Instructions", "from": 0, "body": "Please use the updated instructions for the next vendor payment. Details are in the secure doc:\n\n{canary_url}\n\nCall before sending anything over $10k.\n\n{other}"},
+    {"subject": "Production Server Keys - DO NOT SHARE", "from": 1, "body": "Keeping these here until the vault migration finishes.\n\nAWS_ACCESS_KEY_ID={fake_aws_key}\nAWS_SECRET_ACCESS_KEY={fake_aws_secret}\n\n{owner}"},
+    {"subject": "Updated VPN Credentials", "from": 0, "body": "New VPN profile is at {canary_url}\nTemp password: {fake_password}\n\nIt expires in 7 days.\n\n{other}"}
+  ]
+}
